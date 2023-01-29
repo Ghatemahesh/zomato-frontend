@@ -1,0 +1,282 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Poppins';
+    padding: 0%;
+    margin: 0%;
+   
+}
+/*  */
+
+/* default css classes */
+.color-mute{
+    color: #8C96AB;
+}
+.modal-backdrop{
+    position: inherit;
+}
+.color-blue{
+    color: #192F60;
+}
+.color-red{
+    color: #CE0505 ;
+}
+.box-shadow{
+    box-shadow:0px 1px 7px 1px #8c96abb9;
+}
+
+
+.bg-color-red{
+    background-color:#CE0505 
+}
+.fs-small{
+    font-size:13px;
+    margin-left: 5px;
+    margin-bottom: 2px;
+}
+
+/* card hover effect */
+.card-hover{
+    transition: 200ms cubic-bezier(0.6, 0.34, 1, 1);
+}
+
+.card-hover:hover{
+    box-shadow: 3px 5px 13px 1px #88a2da;
+}
+
+/* background image */
+.section-1{
+    width: 100%;
+    background-image:linear-gradient(transparent, rgba(0, 0, 0, 0.705)),url(./images/background.png);
+    mix-blend-mode: multiply;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.section-gap{
+    gap: 20px;
+}
+.brand-logo{
+    width: 120px;
+    height: 120px;
+    border-radius: 65px;
+    background-color: white;
+}
+.location{
+    position: relative;
+}
+.location input{
+    border-radius: 2px;
+}
+.location input::placeholder{
+    font-size: .9rem; 
+}
+
+.search-autocompleate{
+    position: absolute;
+    list-style: none;
+    padding: 0%;
+    box-shadow: 0px 0px 4px 0px #8c96ab;
+    z-index: -1;
+    background-color: #FFFFFF;
+    width: 100%;
+}
+.search-autocompleate li{
+    padding: 3px;
+    color: #636F88;
+    font-size: .8rem;
+    padding-bottom: 5px;   
+}
+.search-autocompleate li img{
+    width: 45px;
+    height:45px ;
+    border-radius: 24px;
+}
+.search-autocompleate li p{
+    color:#192F60 ;
+}
+/* Quick search section */
+.food-item-image{
+    width: 21vh;
+    height: 19vh;
+}
+.width-title{
+ width: 92%;
+}
+.box-height{
+    height: 19vh;
+    width: 47vh;
+}
+
+/* media queries 1st page*/
+
+@media only screen 
+  and (min-device-width: 352px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) { 
+    .display-2{
+       font-size: 4rem !important;
+    }
+}
+
+/******************* 2nd page ****************** */
+
+/* header */
+.logo{
+    border-radius: 30px;
+    border: 2px solid white;
+    padding: 1px;
+    width: 40px;
+}
+.logo-hide{
+    visibility: hidden !important;
+}
+.brand-area{
+    width: 45px;
+    height: 45px;
+    border-radius: 25px;
+}
+
+/* 2nd section */
+
+/* Filter section */
+.margin-ten{
+    margin: 10px 0px !important;
+}
+#select-location{
+    width: 90%;
+    padding: 4px 10px;
+    font-size: 13px;
+    color: #8C96AB;
+    border: 2px solid #8C96AB;
+    border-radius: 3px;
+    margin: 6px 0px;
+}
+.cuisine-checkbox{
+    font-size:12px;
+    margin: 3.5px 0px;
+}
+.cuisine-checkbox label{
+    margin-left: 3px;
+}
+/* cost section */
+.cost-area{
+    font-size:12px;
+    margin: 5px 0px;
+}
+.cost-area label{
+    margin-left: 4px;
+}
+
+/* Sort area */
+
+.sort-area{
+    font-size:12px;
+    margin: 4px 0px;
+}
+
+.sort-area label{
+    margin-left: 3px;
+    font-size: 12px;
+}
+
+/* restaurants section */
+
+.food-logo{
+    width: 110px;
+    height: 110px;
+    border-radius: 16px;
+}
+/* pagignation section */
+
+.pagignation-area ul{
+    display: flex;
+    margin-top: 5px;
+    padding-left: 0% !important;
+}
+
+.pagignation-area ul li{
+    list-style: none;
+    margin: 3px 3px;
+    padding: 0px 6px;
+    border-radius: 4px;
+}
+
+/***************** 3rd page CSS ***********************/
+.restaurant-main-image {
+    height: 65vh;
+    overflow: hidden;
+}
+.restaurant-main-image img {
+    width: 100%;
+    height: 120%;
+}
+
+.restaurant-main-image button{
+    bottom: 8%;
+    right: 5%;
+    background-color: #ffffff8a;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+/* menu items css */
+
+.menu-food-item {
+    width: 90px;
+    height: 90px;
+    position: relative;
+  }
+  .menu-food-item .add {
+    position: absolute;
+    left: 25%;
+    bottom: -20%;
+  }
+  .menu-food-item img {
+    width: 100%;
+    height: 100%;
+    border-radius: 3px;
+  }
+  .menu-food-item .order-item-count {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: -16%;
+  }
+  .menu-food-item .order-item-count span {
+    background-color: rgb(103, 56, 255);
+    color: white;
+    padding: 1px 7px;
+  }
+
+  .menu-food-item .order-item-count span:active{
+    color: rgb(0, 0, 0);
+  }
+
+
+/* media queries */
+@media only screen 
+  and (min-device-width: 352px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) { 
+
+    .food-logo{
+        width: 90px;
+        height: 90px;
+        border-radius: 13px;
+        margin-left: 7px;
+        margin-top: 7px;
+    }
+    .restaurant-main-image {
+        height: 30vh;
+        overflow: hidden;
+    }
+    .restaurant-main-image img {
+        width: 130%;
+        height: 100%;
+    }
+}
